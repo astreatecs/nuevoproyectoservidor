@@ -6,11 +6,15 @@ let body = bodyParser();
 let coneccion = process.env.PORT || 3500;
 
 //Rutas GET
-app.get('/', function(req, res){
+app.get('/GetUsuarios', function(req, res){
 res.status(200).send('Bienvenido');
 res.end();
 });
 
+app.get('/GetRecargas', function(req, res){
+    res.status(200).send('Bienvenido');
+    res.end();
+    });
 
 //Rutas POST
 /*app.post('/', function(req, res){
