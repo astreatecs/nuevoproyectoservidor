@@ -17,11 +17,11 @@ app.get('/GetRecargas', function(req, res){
     });
 
 //Rutas POST
-/*app.post('/', function(req, res){
+app.post('/', function(req, res){
     req.body.nombre();
     req.end();
-    });*/
-
+    });
+    
 //escuchas
 app.listen(port, function(){
     console.log('escuchando desde el puerto' + port)
